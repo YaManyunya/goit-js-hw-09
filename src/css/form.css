@@ -1,0 +1,70 @@
+/* Центруємо форму на сторінці */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8; /* легкий фон для сторінки */
+}
+
+/* Стиль самої форми */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* відстань між полями */
+  padding: 24px;
+  border: 2px solid #fdfafa; /* голуба рамка */
+  border-radius: 8px;
+  background-color: #FFFFFF; /* голубий фон всередині форми */
+  width: 320px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Стиль для міток */
+.form-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+/* Поле для email */
+.form-input,
+.form-textarea {
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px solid #808080;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form:hover,
+.form-textarea{
+  border: 1px solid #000000;
+}
+/* Текстова область */
+.form-textarea {
+  resize: vertical;
+}
+
+/* Кнопка Submit */
+.form-button {
+  margin-top: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4E75FF;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.form-button:hover {
+  background-color: #6C8CFF;
+}
